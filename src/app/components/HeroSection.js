@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 const HeroSection = () => {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-12 my-4">
+    <section className="grid grid-cols-1 lg:grid-cols-12 my-4 px-0">
       <div className="col-span-7 place-self-center place-items-center grid lg:place-items-start">
         <h1 className="text-white max-w-2xl mb-4 lg:text-6xl text-4xl font-extrabold">
           <span className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
@@ -31,19 +31,38 @@ const HeroSection = () => {
         <p className="text-[#ADB7BE] mb-6 textl-lg lg:text-xl">
         I am a Full Stack WordPress Developer having 6+ years of Experience.
         </p>
-        <div>
+        <div className="mainbtn-div">
+          <div className="lg:flex-row md:flex-row sm:w-full sm:flex-col sm:items-center">
         <Link href="/" >
           <button className="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white px-6 py-3 rounded-full mr-4">
             Hire Me
           </button>
           </Link>
           <Link href="https://rajatmeshram.in/" >
-          <button className="m-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 px-1 py-1  text-white rounded-full">
+          <button className="lg:m-4 md:m-4 mt-5 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 px-1 py-1  text-white rounded-full">
             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
               Download CV
             </span>
           </button>
           </Link>
+          </div>
+          <div className="socials flex flex-row gap-2 mt-5 md:mt-5 lg:mt-5">
+          <Link href="github.com">
+            <Image src="/images/icons8-github.svg" width={40} height={40} alt='github' />
+          </Link>
+          <Link href="linkedin.com">
+            <Image src="/images/icons8-stack-overflow.svg" width={40} height={40} alt='linkedin' />
+          </Link>
+          <Link href="">
+            <Image src="/images/icons8-wordpress.svg" width={40} height={40} alt='linkedin' />
+          </Link>
+          <Link href="">
+            <Image src="/images/icons8-linkedin.svg" width={40} height={40} alt='linkedin' />
+          </Link>
+          <Link href="">
+            <Image src="/images/icons8-skype.svg" width={40} height={40} alt='linkedin' />
+          </Link>
+        </div>
         </div>
       </div>
 
