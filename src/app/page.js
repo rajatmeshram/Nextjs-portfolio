@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
@@ -6,7 +7,24 @@ import ProjectSection from "./components/ProjectSection";
 import EmailSEction from "./components/EmailSEction";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
+import Skills from "./components/Skills";
+import Accordion from "./components/Accordian";
+import { useEffect, useState } from 'react';
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // Change the breakpoint as per your requirements
+    };
+    handleResize(); // Call once on initial render to set the initial state
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <main className="flex min-h-screen flex-col bg-[#121212] container mx-auto py-4 px-12">
       <Navbar />
@@ -14,6 +32,9 @@ export default function Home() {
           <HeroSection />
           <AchievementsSection />
           <AboutSection />
+          
+          {isMobile ?  <Accordion /> : <Skills />}
+         
           <ProjectSection />
           <EmailSEction />
       </div>
