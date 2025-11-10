@@ -43,16 +43,16 @@ export function Pricing({techno}) {
     offset: ['start start', 'end end']
   })
 
-  useEffect( () => {
-    const lenis = new Lenis()
+  // useEffect( () => {
+  //   const lenis = new Lenis()
 
-    function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
+  //   function raf(time) {
+  //     lenis.raf(time)
+  //     requestAnimationFrame(raf)
+  //   }
 
-    requestAnimationFrame(raf)
-  })
+  //   requestAnimationFrame(raf)
+  // })
   
 return (
     <div ref={container} id='technology'>

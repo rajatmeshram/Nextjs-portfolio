@@ -17,19 +17,19 @@ export function WorkHistory({workData}) {
       
       <div className="relative">
         {/* Timeline line */}
-        <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 via-blue-400 to-blue-200"></div>
+        <div className="absolute md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 via-blue-400 to-blue-200"></div>
         
         {workHistory.map((job, index) => (
           <div key={index} className="relative mb-8 last:mb-0">
             {/* Timeline dot with pulse effect for current job */}
-            <div className="absolute left-8 w-4 h-4 bg-blue-600 rounded-full -translate-x-1/2 z-10">
+            <div className="absolute md:left-8 w-4 h-4 bg-blue-600 rounded-full -translate-x-1/2 z-10">
               {index === 0 && (
                 <div className="absolute inset-0 bg-blue-600 rounded-full animate-ping"></div>
               )}
             </div>
             
             {/* Full width card */}
-            <div className="ml-16 w-full">
+            <div className="md:ml-16 ml-4 md:w-full w-[calc(100%_-_16px)]">
               <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
                 {/* Card Header - Always visible */}
                 <div className="p-6">

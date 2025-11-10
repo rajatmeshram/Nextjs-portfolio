@@ -7,7 +7,7 @@ export function Author({ data }) {
   
   return (
     <section id="author" >
-      <div className="flex items-center gap-6 justify-start py-10">
+      <div className="flex items-center gap-6 justify-start py-10 flex-wrap">
 
         {data?.map((profile, index) => {
           const Icon = profile?.social_icon;
