@@ -26,7 +26,7 @@ const Technology = ({ i, title, description, src, color, progress, range, target
           top: `calc(-5vh + ${i * 25}px)`,
         }}
         className="
-          relative flex flex-col lg:flex-row 
+          relative md:block flex flex-col lg:flex-row 
           h-auto lg:h-[500px] w-full lg:w-[1000px]
           rounded-[25px] p-6 sm:p-8 md:p-10 lg:p-[50px]
           transform-origin-top shadow-lg
