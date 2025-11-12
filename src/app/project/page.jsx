@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 import { ImageGrid } from "@/components/ImageGrid";
 
+const API_BASE_URL =  process.env.NEXT_PUBLIC_BASE_URL;
+
 export default function ProjectPage() {
   const tabs = [
     { id: "wpphp", label: "WordPress / PHP", slug: "wpphp" },
@@ -14,7 +16,6 @@ export default function ProjectPage() {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const API_BASE_URL = "http://localhost:1337";
 
   // Fetch projects based on category
   useEffect(() => {

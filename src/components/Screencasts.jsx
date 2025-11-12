@@ -73,7 +73,7 @@ export function Screencasts({ port }) {
 
               >
                 <div className="flex overflow-hidden rounded-sm shadow-sm h-full w-full">
-                  <Image src={`${process.env.IMG_URL
+                  <Image src={`${process.env.NEXT_PUBLIC_IMG_URL
                     + video.image.url}`} width='400' height='400' alt="" unoptimized className='object-cover' />
                 </div>
 

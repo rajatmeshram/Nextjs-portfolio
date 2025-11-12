@@ -63,7 +63,7 @@ const Technology = ({ i, title, description, src, color, progress, range, target
           <div className="relative w-full lg:w-[60%] h-[250px] sm:h-[300px] md:h-[350px] lg:h-full rounded-[20px] lg:rounded-[25px] overflow-hidden">
             <motion.div className="w-full h-full" style={{ scale: imageScale }}>
               <Image
-                src={`${process.env.IMG_URL + image.url}`}
+                src={`${process.env.NEXT_PUBLIC_IMG_URL + image.url}`}
                 width={960}
                 height={635}
                 alt={title}

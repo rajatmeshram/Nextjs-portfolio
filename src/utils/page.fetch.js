@@ -6,7 +6,7 @@ export const getDataBySlug = async (slug) => {
 
         if (!slug) throw new Error()
 
-        const response = await fetch(process.env.BASE_API_URL + slug, {
+        const response = await fetch(process.env.NEXT_PUBLIC_BASE_API_URL + slug, {
             cache: 'no-store',
 
         });

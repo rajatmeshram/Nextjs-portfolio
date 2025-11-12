@@ -32,14 +32,14 @@ export default function QuoteSlider({qdata}) {
       >
         <blockquote className="mt-2">
           <p className="font-display text-xl font-medium text-slate-900">
-            "{currentTestimonial.quotes}"
+          {currentTestimonial.quotes}
           </p>
         </blockquote>
         <figcaption className="mt-2 text-sm text-slate-500">
           <strong className="font-semibold text-blue-600 before:content-['—_']">
             {currentTestimonial.author}
           </strong>
-          , {currentTestimonial.designation}
+          {currentTestimonial.designation}
         </figcaption>
       </figure>
       

@@ -6,7 +6,7 @@ const imageStyle = {
 export function ImageGrid({ title, description, image, btn_text, btn_url }) {
   return (
     <div className="rounded-lg shadow-md p-4 bg-white">
-      {image && (
+      {Image && (
         <img
           src={image}
           alt={title}
